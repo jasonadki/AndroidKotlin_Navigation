@@ -1,0 +1,25 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigation_app.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addVehicleFragment"
+            app:destination="@id/addVehicleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.navigation_app.EditProfileFragment"
+        android:label="Edit Profile" />
+    <fragment
+        android:id="@+id/addVehicleFragment"
+        android:name="com.example.navigation_app.AddVehicleFragment"
+        android:label="Add Vehicle" />
+</navigation>
